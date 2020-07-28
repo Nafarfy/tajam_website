@@ -1,0 +1,42 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.bottom-line {
+  align-self: center;  
+  width: 50px;
+  height: 1px;
+  background: $main-color;
+}
+
+// Button
+.btn {
+  padding: 8px 14px;
+  border: 1px solid $main-color;
+  border-radius: 3px;
+  text-decoration: none;
+  color: $main-color;
+  font-size: 16px;
+  font-family: 'Hammersmith One', sans-serif;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+.dot-active {
+  background: $main-color;
+}
+
+.mt {
+  &-1 {
+    margin-top: 1rem;
+  }
+  &-2 {
+    margin-top: 1.5rem;
+  }
+  &-3 {
+    margin-top: 3rem;
+  }
+}
