@@ -189,7 +189,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 218px;
-  width: 771px;
+  max-width: 771px;
 }
 
 #main-showcase .showcase-content .btn {
@@ -261,7 +261,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 402px;
+  min-height: 402px;
 }
 
 #about-a .container {
@@ -373,5 +373,149 @@ img {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.8px;
+}
+
+#expertise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  min-height: 755px;
+}
+
+#expertise .container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4rem;
+}
+
+#expertise .container .title h2 {
+  font-family: 'Playfair Display', serif;
+  color: #413d4b;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+#expertise .container .title p {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #2f2d35;
+  opacity: 0.75;
+  letter-spacing: 1.05px;
+  margin-top: 0.5rem;
+}
+
+#expertise .container .title .bottom-line {
+  margin-top: 1rem;
+}
+
+#expertise .container .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  margin-top: 2.5rem;
+}
+
+#expertise .container .items .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#expertise .container .items .column .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 318px;
+  height: 250px;
+}
+
+#expertise .container .items .column .item h3 {
+  color: #413d4b;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-top: 2rem;
+}
+
+#expertise .container .items .column .item p {
+  width: 254px;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.7px;
+  color: #333;
+  opacity: 0.75;
+  margin-top: 1rem;
+}
+
+#expertise .container .items .column .web {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+}
+
+#expertise .container .items .column .mobile {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+}
+
+#expertise .container .items .column .mobile img {
+  height: 50px;
+  width: 28px;
+}
+
+#expertise .container .items .column .branding {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+  border-left: 1px solid rgba(0, 0, 0, 0.096);
+  border-right: 1px solid rgba(0, 0, 0, 0.096);
+}
+
+#expertise .container .items .column .branding img {
+  height: 42px;
+}
+
+#expertise .container .items .column .gamedev {
+  border-left: 1px solid rgba(0, 0, 0, 0.096);
+  border-right: 1px solid rgba(0, 0, 0, 0.096);
+}
+
+#expertise .container .items .column .gamedev img {
+  width: 41px;
+}
+
+#expertise .container .items .column .love img {
+  width: 50px;
+  height: 46px;
+}
+
+#expertise .container .items .img-wrap {
+  height: 50px;
+}
+
+#expertise .container .items .img-wrap img {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
 }
 /*# sourceMappingURL=main.css.map */

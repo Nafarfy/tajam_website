@@ -122,7 +122,7 @@ img {
         align-items: center;
         justify-content: center;
         margin-top: 218px;
-        width: 771px;
+        max-width: 771px;
 
         .btn {
           margin-top: 3.1rem;
@@ -182,7 +182,7 @@ img {
   &-a {
     display: flex;
     justify-content: center;
-    height: 402px;
+    min-height: 402px;
 
     .container {
       width: 100%;
@@ -287,3 +287,128 @@ img {
     }
   }
 }
+
+// Section Expertise
+#expertise {
+  display: flex;
+  text-align: center;
+  min-height: 755px;
+
+  .container {
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+
+      h2 {
+        font-family: 'Playfair Display', serif;
+        color: $text-color;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1.1px;
+      }
+
+      p {
+        font-family: 'Playfair Display', serif;
+        font-size: 14px;
+        font-weight: 400;
+        color: #2f2d35;
+        opacity: 0.75;
+        letter-spacing: 1.05px;
+        margin-top: 0.5rem;
+      }
+
+      .bottom-line {
+        margin-top: 1rem;
+      }
+    }
+
+    .items {
+      display: flex;
+      height: 500px;
+      margin-top: 2.5rem;
+
+      .column {
+        display: flex;
+        flex-direction: column;
+
+        .item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 318px;
+          height: 250px;
+
+          h3 {
+            color: $text-color;
+            font-size: 14px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            margin-top: 2rem;
+          }
+          
+          p {
+            width: 254px;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: 0.7px;
+            color: #333;
+            opacity: 0.75;
+            margin-top: 1rem;
+          }
+        }
+
+        .web {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+        }
+
+        .mobile {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+          img {
+            height: 50px;
+            width: 28px;
+          }
+        }
+
+        .branding {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+          border-left: 1px solid rgba(0, 0, 0, 0.096);
+          border-right: 1px solid rgba(0, 0, 0, 0.096);
+          img {
+            height: 42px;
+          }
+        }
+
+        .gamedev {
+          border-left: 1px solid rgba(0, 0, 0, 0.096);
+          border-right: 1px solid rgba(0, 0, 0, 0.096);          
+          img {
+            width: 41px;
+          }
+        }
+
+        .love {
+          img {
+            width: 50px;
+            height: 46px;
+          }
+        }
+      }
+
+      .img-wrap {
+        height: 50px;
+
+        img {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
