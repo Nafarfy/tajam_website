@@ -635,4 +635,76 @@ img {
   display: inline-block;
   margin-top: 1.8rem;
 }
+
+#works {
+  text-align: center;
+  min-height: 597px;
+}
+
+#works .container .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 4rem;
+}
+
+#works .container .title h2 {
+  font-family: "Playfair Display";
+  font-size: 22px;
+  color: #413d4b;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+#works .container .title a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #413d4b;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+}
+
+#works .container .title a img {
+  display: inline;
+  width: 8px;
+  height: 13px;
+  opacity: 0.7;
+  margin-left: 10px;
+}
+
+#works .items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 4rem;
+}
+
+#works .items .item {
+  height: 200px;
+  border: 1px solid #fff;
+}
+
+#works .items .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#works .btn {
+  display: inline-block;
+  padding: 8px 25px;
+  margin-top: 70px;
+}
 /*# sourceMappingURL=main.css.map */
