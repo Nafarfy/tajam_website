@@ -642,6 +642,8 @@ img {
 }
 
 #works {
+  max-width: 1920px;
+  margin: 0 auto;
   text-align: center;
   min-height: 597px;
 }
@@ -690,8 +692,8 @@ img {
 #works .items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  -ms-grid-columns: (minmax(275px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   margin-top: 4rem;
 }
 

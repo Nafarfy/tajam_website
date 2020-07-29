@@ -522,6 +522,8 @@ img {
 
 // Section Works
 #works {
+  max-width: 1920px;
+  margin: 0 auto;
   text-align: center;
   min-height: 597px;
 
@@ -560,7 +562,7 @@ img {
 
   .items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     margin-top: 4rem;
 
     .item {
