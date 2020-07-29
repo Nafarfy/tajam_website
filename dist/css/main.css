@@ -30,6 +30,11 @@
   background: #00e0d0;
 }
 
+.img-active {
+  width: 70px !important;
+  height: 70px !important;
+}
+
 .mt-1 {
   margin-top: 1rem;
 }
@@ -675,7 +680,7 @@ img {
 }
 
 #works .container .title a img {
-  display: inline;
+  display: block;
   width: 8px;
   height: 13px;
   opacity: 0.7;
@@ -706,5 +711,359 @@ img {
   display: inline-block;
   padding: 8px 25px;
   margin-top: 70px;
+}
+
+#testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background: url("../img/testim-bg.png") no-repeat center center/cover;
+  text-align: center;
+  min-height: 500px;
+  margin-top: 70px;
+}
+
+#testimonials:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#09052f), to(#311d5e));
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  opacity: 0.85;
+}
+
+#testimonials .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+#testimonials .container .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 770px;
+}
+
+#testimonials .container .text span {
+  display: block;
+  color: #fff;
+  font-family: "Playfair Display";
+  font-size: 100px;
+  line-height: 22px;
+  letter-spacing: 3px;
+  opacity: 0.9;
+  margin-top: 5.7rem;
+}
+
+#testimonials .container .text .testim-text {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  opacity: 0.85;
+  letter-spacing: 0.4px;
+  margin-top: 1.3rem;
+}
+
+#testimonials .container .text h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-top: 2.75rem;
+}
+
+#testimonials .container .text .lead {
+  color: #fff;
+  font-size: 13px;
+  line-height: 22px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-top: 2px;
+}
+
+#testimonials .container .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 391px;
+  height: 70px;
+  margin-top: 2.35rem;
+}
+
+#testimonials .container .slider .button {
+  border: none;
+  background: none;
+}
+
+#testimonials .container .slider .button:hover {
+  cursor: pointer;
+}
+
+#testimonials .container .slider .pic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#testimonials .container .slider .pic .img-wrap {
+  width: 45px;
+  height: 45px;
+  margin-right: 0.8rem;
+}
+
+#testimonials .container .slider .pic .img-wrap:last-child {
+  margin-right: 0;
+}
+
+#contact {
+  min-height: 654px;
+}
+
+#contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contact .container .contact-form {
+  width: 460px;
+  margin-top: 4rem;
+}
+
+#contact .container .contact-form h2 {
+  font-family: "Playfair Display";
+  font-size: 22px;
+  color: #413d4b;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+#contact .container .contact-form #main-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1.8rem;
+}
+
+#contact .container .contact-form #main-form .text-input {
+  font-family: 'Roboto', sans-serif;
+  color: #413d4ba2;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  border: none;
+  border: 1px solid #00000021;
+  border-radius: 2px;
+  outline: none;
+  height: 45px;
+  padding: 0 21px;
+  margin-bottom: 21px;
+}
+
+#contact .container .contact-form #main-form .text-input:hover, #contact .container .contact-form #main-form .text-input:focus {
+  border: 1px solid #44596e60;
+}
+
+#contact .container .contact-form #main-form .text-input::-webkit-input-placeholder {
+  color: #413d4ba2;
+}
+
+#contact .container .contact-form #main-form .text-input:-ms-input-placeholder {
+  color: #413d4ba2;
+}
+
+#contact .container .contact-form #main-form .text-input::-ms-input-placeholder {
+  color: #413d4ba2;
+}
+
+#contact .container .contact-form #main-form .text-input::placeholder {
+  color: #413d4ba2;
+}
+
+#contact .container .contact-form #main-form .text-input:first-child {
+  margin-bottom: 23px;
+}
+
+#contact .container .contact-form #main-form .message-input {
+  font-family: 'Roboto', sans-serif;
+  color: #413d4ba2;
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  border: none;
+  border: 1px solid #00000021;
+  border-radius: 2px;
+  outline: none;
+  height: 200px;
+  padding: 22px 20px;
+  margin-bottom: 21px;
+}
+
+#contact .container .contact-form #main-form .message-input:hover, #contact .container .contact-form #main-form .message-input:focus {
+  border: 1px solid #44596e60;
+}
+
+#contact .container .contact-form #main-form .message-input::-webkit-input-placeholder {
+  color: #413d4ba2;
+}
+
+#contact .container .contact-form #main-form .message-input:-ms-input-placeholder {
+  color: #413d4ba2;
+}
+
+#contact .container .contact-form #main-form .message-input::-ms-input-placeholder {
+  color: #413d4ba2;
+}
+
+#contact .container .contact-form #main-form .message-input::placeholder {
+  color: #413d4ba2;
+}
+
+#contact .container .contact-form #main-form .btn {
+  width: 120px;
+  background: none;
+  outline: none;
+}
+
+#contact .container .contact-form #main-form .btn:focus {
+  border: 1px solid #44596e60;
+}
+
+#contact .container .client {
+  width: 381px;
+  margin-top: 4rem;
+}
+
+#contact .container .client h2 {
+  color: #413d4b;
+  font-family: "Playfair Display";
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+#contact .container .client .client-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact .container .client .client-img .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .container .client .client-img .column-left {
+  margin-right: 79px;
+}
+
+#contact .container .client .client-img .column-left .zara {
+  width: 162px;
+  height: 22px;
+  margin-top: 42px;
+}
+
+#contact .container .client .client-img .column-left .barneys {
+  width: 154px;
+  height: 41px;
+  margin-top: 47px;
+}
+
+#contact .container .client .client-img .column-left .calvin {
+  width: 151px;
+  height: 24px;
+  margin-top: 49px;
+}
+
+#contact .container .client .client-img .column-left .converse {
+  width: 113px;
+  height: 69px;
+  margin-top: 54px;
+}
+
+#contact .container .client .client-img .column-left .levi {
+  width: 109px;
+  height: 53px;
+  margin-top: 50px;
+}
+
+#contact .container .client .client-img .column-right .mango {
+  width: 138px;
+  height: 22px;
+  margin-top: 42px;
+}
+
+#contact .container .client .client-img .column-right .gucci {
+  width: 140px;
+  height: 21px;
+  margin-top: 60px;
+}
+
+#contact .container .client .client-img .column-right .nike {
+  width: 95px;
+  height: 34px;
+  margin-top: 53px;
+}
+
+#contact .container .client .client-img .column-right .puma {
+  width: 114px;
+  height: 56px;
+  margin-top: 54px;
+}
+
+#contact .container .client .client-img .column-right .billabong {
+  width: 130px;
+  height: 70px;
+  margin-top: 29px;
 }
 /*# sourceMappingURL=main.css.map */
