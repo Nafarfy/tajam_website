@@ -557,8 +557,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 940px;
-  height: 308px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 940px;
   margin-top: 3rem;
 }
 
@@ -572,7 +573,7 @@ img {
           flex-direction: column;
   width: 220px;
   height: 308px;
-  margin-right: 1.3rem;
+  margin-right: 20px;
 }
 
 #team .container .items .item:last-child {
@@ -586,7 +587,6 @@ img {
 }
 
 #team .container .items .item .img-wrap img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

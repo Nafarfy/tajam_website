@@ -451,18 +451,16 @@ img {
 
     .items {
       display: flex;
-      width: 940px;
-      height: 308px;
+      flex-wrap: wrap;
+      max-width: 940px;
       margin-top: 3rem;
-
-      
 
       .item {
         display: flex;
-        flex-direction: column;
+        flex-direction: column;       
         width: 220px;
         height: 308px;
-        margin-right: 1.3rem;
+        margin-right: 20px;
 
         &:last-child {
           margin-right: 0;
@@ -472,8 +470,8 @@ img {
           width: 220px;
           height: 229px;
           overflow: hidden;
+
           img {
-            width: 100%;
             object-fit: cover;
           }
         }
@@ -521,3 +519,5 @@ img {
     }
   }
 }
+
+
