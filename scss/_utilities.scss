@@ -12,8 +12,16 @@
   background: $main-color;
 }
 
+.navbar {
+  padding-bottom: 15px;
+  background: rgba(36, 45, 65, 0.658);
+  transition: all .5s;
+  box-shadow: 0px 8px 11px -3px rgba(0,0,0,0.75);
+}
+
 // Button
 .btn {
+  position: relative;
   padding: 8px 14px;
   border: 1px solid $main-color;
   border-radius: 3px;
@@ -22,7 +30,35 @@
   font-size: 16px;
   font-family: 'Hammersmith One', sans-serif;
   text-transform: uppercase;
+  transition: all .7s;
+  overflow: hidden;
   z-index: 3;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: $secondary-color;
+    overflow: hidden;
+    transform: scale(4) translateX(-75%) translateY(-75%) rotate(-45deg);
+    transition: all .7s;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #f4f4f4;
+    cursor: pointer;
+    border: 1px solid $secondary-color;
+
+    &:before {
+      transform: scale(4) translateX(0) translateY(0) rotate(-45deg);
+      width: 100%;
+    }
+  }
+
 }
 
 .dot-active {
