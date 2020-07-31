@@ -1974,10 +1974,10 @@ img {
             justify-content: start;
   }
   #contact .container .contact-form {
-    width: 50%;
+    width: 100%;
   }
   #contact .container .client {
-    width: 50%;
+    width: 100%;
   }
   #contact .container .client .client-img {
     margin-bottom: 2rem;
