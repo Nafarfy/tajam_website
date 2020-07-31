@@ -23,3 +23,17 @@ $('#nav-main a, .btn').on('click', function (event) {
     );
   }
 });
+
+// Burger
+$(document).ready(function () {
+  $('.nav-burger').click(function (event) {
+    $('.nav-burger, .nav-links').toggleClass('nav-active');
+    $('body').toggleClass('lock');
+  });
+});
+
+// Remove burger 
+$('.nav-links ul li').click(function (event) {
+  $('.nav-burger,.nav-links').removeClass('nav-active');
+  $('body').removeClass('lock');
+});

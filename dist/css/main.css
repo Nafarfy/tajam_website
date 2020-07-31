@@ -23,6 +23,27 @@
           box-shadow: 0px 8px 11px -3px rgba(0, 0, 0, 0.75);
 }
 
+.nav-active:before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 9px !important;
+}
+
+.nav-active:after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 9px !important;
+}
+
+.nav-active span {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.lock {
+  overflow: hidden;
+}
+
 .btn {
   position: relative;
   padding: 8px 14px;
@@ -36,7 +57,7 @@
   -webkit-transition: all .7s;
   transition: all .7s;
   overflow: hidden;
-  z-index: 3;
+  z-index: 2;
 }
 
 .btn:before {
@@ -1530,7 +1551,7 @@ img {
   letter-spacing: 0.35px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   #about-a .container {
     height: 100%;
   }
@@ -1697,7 +1718,69 @@ img {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
+  #nav-main .nav-content .logo {
+    position: relative;
+    z-index: 3;
+  }
+  #nav-main .nav-content .nav-burger {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  #nav-main .nav-content .nav-burger:before, #nav-main .nav-content .nav-burger:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #nav-main .nav-content .nav-burger:before {
+    top: 0;
+  }
+  #nav-main .nav-content .nav-burger:after {
+    bottom: 0;
+  }
+  #nav-main .nav-content .nav-burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #nav-main .nav-content .nav-links {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    background-color: #333;
+    padding-top: 7rem;
+    background: rgba(36, 45, 65, 0.801);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #nav-main .nav-content .nav-links.nav-active {
+    top: 0;
+  }
+  #nav-main .nav-content .nav-links ul {
+    display: block;
+  }
+  #nav-main .nav-content .nav-links ul li {
+    margin-bottom: 3rem;
+  }
+  #nav-main .nav-content .nav-links ul li a {
+    font-size: 25px;
+  }
   #about-a .container .about-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1800,6 +1883,104 @@ img {
   #main-footer .container .items-top .item-center {
     width: 100%;
     margin: 3rem 0 0 0;
+  }
+}
+
+@media (max-height: 500px) {
+  #nav-main .nav-content .logo {
+    position: relative;
+    z-index: 3;
+  }
+  #nav-main .nav-content .nav-burger {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  #nav-main .nav-content .nav-burger:before, #nav-main .nav-content .nav-burger:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #nav-main .nav-content .nav-burger:before {
+    top: 0;
+  }
+  #nav-main .nav-content .nav-burger:after {
+    bottom: 0;
+  }
+  #nav-main .nav-content .nav-burger span {
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #nav-main .nav-content .nav-links {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    background-color: #333;
+    padding-top: 7rem;
+    background: rgba(36, 45, 65, 0.801);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #nav-main .nav-content .nav-links.nav-active {
+    top: 0;
+  }
+  #nav-main .nav-content .nav-links ul {
+    display: block;
+  }
+  #nav-main .nav-content .nav-links ul li {
+    margin-bottom: 3rem;
+  }
+  #nav-main .nav-content .nav-links ul li a {
+    font-size: 25px;
+  }
+  #main-footer .container .items-bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #works .items {
+    -ms-grid-columns: (minmax(275px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  }
+  #works .items a .item {
+    border: none;
+    -webkit-box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 0px 22px 1px rgba(0, 0, 0, 0.75);
+  }
+  #contact .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  #contact .container .contact-form {
+    width: 50%;
+  }
+  #contact .container .client {
+    width: 50%;
+  }
+  #contact .container .client .client-img {
+    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
