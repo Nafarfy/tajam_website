@@ -1,7 +1,7 @@
-const nav = document.querySelector('#nav-main');
 
 // Add backgroud to navbar
 window.addEventListener('scroll', function () {
+  const nav = document.querySelector('#nav-main');
   if (window.scrollY > 2) {
     nav.className = 'navbar';
   } else {
@@ -37,3 +37,27 @@ $('.nav-links ul li').click(function (event) {
   $('.nav-burger,.nav-links').removeClass('nav-active');
   $('body').removeClass('lock');
 });
+
+
+// Avtive nav link
+var sections = $('section, main')
+  , nav = $('nav')
+  , nav_height = nav.outerHeight();
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+
+  sections.each(function () {
+    var top = $(this).offset().top - nav_height,
+      bottom = top + $(this).outerHeight();
+
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('nav-color');
+      sections.removeClass('active');
+
+      $(this).addClass('nav-color');
+      nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('nav-color');
+    }
+  });
+});
+

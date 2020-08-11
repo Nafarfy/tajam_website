@@ -23,6 +23,10 @@
           box-shadow: 0px 8px 11px -3px rgba(0, 0, 0, 0.75);
 }
 
+a.nav-color {
+  color: #00e0d0 !important;
+}
+
 .nav-active:before {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
@@ -89,7 +93,7 @@
 }
 
 .dot-active {
-  background: #00e0d0;
+  background: #00e0d0 !important;
 }
 
 .img-active {
@@ -329,6 +333,9 @@ img {
   height: 10px;
   border: 1px solid #c2c2c2;
   border-radius: 50%;
+  background: none;
+  outline: none;
+  cursor: pointer;
 }
 
 #about-a {
@@ -1977,7 +1984,7 @@ img {
     width: 100%;
   }
   #contact .container .client {
-    width: 100%;
+    width: 60%;
   }
   #contact .container .client .client-img {
     margin-bottom: 2rem;
